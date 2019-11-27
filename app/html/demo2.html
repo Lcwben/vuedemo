@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <div id="app3">
+        <p v-if="saw">
+            你看不到我！！！！
+        </p>
+    </div>
+    <div id="app4">
+        <ol>
+            <li v-for="item in list">{{item.text}}</li>
+        </ol>
+    </div>
+
+    <div id="app5">
+        <p>{{message5}}</p>
+        <button v-on:click="reverseMsg">翻转按钮</button>
+    </div>
+    
+    <div id="app6">
+        <input v-model="message6" type="text">
+        <p>{{message6}}</p>
+    </div>
+    <script src="../js/demo2.js"></script>
+</body>
+</html>

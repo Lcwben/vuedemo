@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <div id="app7">
+        <veget-note v-for="veget in vegetableList" v-bind:note="veget" v-bind:key="veget.id"></veget-note>
+    </div>
+    <script src="../js/componentDemo.js"></script>
+</body>
+</html>
