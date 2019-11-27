@@ -32,9 +32,19 @@ let bpp1 = new Vue({
     data: {
         smallCase: 'lcwben'
     },
+    methods: {
+        init: function (text) {
+            console.log(text);
+        }
+    },
     filters: {
         formatCase: function (value) {
             return value.toLocaleUpperCase()
         }
+    },
+    mounted: function () {
+        this.init("挂载时调用。");
     }
 });
+
+bpp1.init("vue实例外部调用。");
