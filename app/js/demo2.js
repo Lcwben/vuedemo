@@ -26,3 +26,15 @@ let app6 = new Vue({
     el: '#app6',
     data: {message6: '默认是没有内容'},
 });
+
+let bpp1 = new Vue({
+    el: '#bpp1',
+    data: {
+        smallCase: 'lcwben'
+    },
+    filters: {
+        formatCase: function (value) {
+            return value.toLocaleUpperCase()
+        }
+    }
+});
