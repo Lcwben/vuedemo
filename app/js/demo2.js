@@ -27,6 +27,20 @@ let app6 = new Vue({
     data: {message6: '默认是没有内容'},
 });
 
+let app7 = new Vue({
+    el: '#app7',
+    data: {
+        showClass1: 'true',
+        app7cls1: 'app7cls1',
+        app7cls2: 'app7cls2'
+    },
+    methods: {
+        getCls: function () {
+            return this.showClass1 == 'true'? this.app7cls1 : this.app7cls2
+        }
+    }
+});
+
 let bpp1 = new Vue({
     el: '#bpp1',
     data: {

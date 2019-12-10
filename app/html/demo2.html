@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" src="../style/demo2.css"/>
 <head>
     <meta charset="UTF-8">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <title>Title</title>
+    <style>
+        .app7cls1 {
+            background-color: #b50405
+        }
+
+        .app7cls2 {
+            background-color: #07800d
+        }
+    </style>
 </head>
 <body>
     <div id="app3">
@@ -27,9 +37,15 @@
         <p>{{message6}}</p>
     </div>
 
+    <div id="app7">
+        <div v-bind:class="getCls()">{{showClass1}}</div>
+        <input v-model="showClass1">
+    </div>
+
     <div id="bpp1">
         <p>{{smallCase | formatCase}}</p>
     </div>
     <script src="../js/demo2.js"></script>
+
 </body>
 </html>
