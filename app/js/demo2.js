@@ -1,3 +1,13 @@
+Vue.component('test-comp1', {
+    data: function () {
+        return {
+            t1: 'test1'
+        }
+    },
+    template: '<div>{{t1}}</div>'
+
+});
+
 let app3 = new Vue({
     el: '#app3',
     data: {
@@ -25,6 +35,8 @@ let app5 = new Vue({
 let app6 = new Vue({
     el: '#app6',
     data: {message6: '默认是没有内容'},
+
+
 });
 
 let app7 = new Vue({
